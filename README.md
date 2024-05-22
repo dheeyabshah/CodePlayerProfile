@@ -14,7 +14,8 @@ In this README, we will highlight the following elements of project creation:
 
 ## Getting started
 
-After opening your project in IntelliJ IDEA, is to set the proper <kbd>SDK</kbd> to Java in version `17` within the [Project Structure settings].
+After opening your project in IntelliJ IDEA, set the proper <kbd>SDK</kbd> to Java in version `17` within the [Project Structure settings].
+Then build the project using Gradle 
 
 ## Running the plugin
 
