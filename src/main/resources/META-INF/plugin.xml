@@ -1,0 +1,31 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>org.jetbrains.plugins.template</id>
+    <name>Code Player Profile</name>
+    <vendor>JetBrains</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <depends>Git4Idea</depends>
+
+    <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="org.plugins.codeplayer.toolWindow.ContributorProfileToolWindowFactory"
+                    id="Contributor Profiles"/>
+    </extensions>
+
+    <actions>
+        <action id="com.example.ContributorProfileAction"
+                class="org.plugins.codeplayer.toolWindow.ContributorProfileAction"
+                text="Show Contributor Profiles"
+                description="Displays the contributor profiles in the tool window">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+
+    <applicationListeners>
+        <listener class="org.plugins.codeplayer.listeners.AppActivationListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
+</idea-plugin>
