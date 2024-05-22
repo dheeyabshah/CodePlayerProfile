@@ -20,7 +20,7 @@ Then build the project using Gradle
 ## Running the plugin
 
 To run the plugin, click the 'Run Plugin' button this will take you to a new window where you can select any project with a git repository by pressing the open button.
-To see the details of the user, select the 'Contributor Profiles button on the left side-bar of the window 
+To see the details of the user, select the 'Contributor Profiles' button on the left side-bar of the window 
 When opening a project for the first time, you can immediately see all the information. 
 When reopening a project, you will need to build the project by pressing the build icon and minimise and reopen your window once the build is complete to view the information. 
 
